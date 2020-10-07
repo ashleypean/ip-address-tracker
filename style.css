@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%
+}
+
+body {
+  background: url('/images/pattern-bg.png') no-repeat;
+  font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 33%;
+  height: 2.5rem;
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+button {
+  background-color: hsl(0, 0%, 17%);
+  height: 2.5rem;
+  width: 3%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+div.info {
+  width: 80%;
+  height: 13%;
+  margin: auto;
+  padding: .5rem;
+  border-radius: 8px;
+  border: 1px solid darkslategray;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+
+div.info div {
+
+}
+
+div.info h6 {
+  color: hsl(0, 0%, 59%);
+
+}
+
+div.info p {
+  font-size: 2rem;
+  margin: 0; 
+  padding: 0;
+}
+
+
+div#map {
+  height: 25rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}

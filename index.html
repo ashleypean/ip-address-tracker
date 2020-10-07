@@ -2,33 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | IP Address Tracker</title>
+  <!--Leaflet.css file-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="search">
+    <h1>IP Address Tracker</h1>
 
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <form action="#">
+      <input type="text" name="search" id="search">
+      <button type="submit">
+        <img src="images/icon-arrow.svg" alt="Submit" />
+      </button>
+    </form>
   </div>
+
+  <div class="info">
+    <div class="ip">
+      <h6>IP ADDRESS</h6>
+      <p>placeholder</p>
+    </div>
+    <hr >
+    <div class="location">
+      <h6>LOCATION</h6>
+      <p>placeholder</p>
+    </div>
+    <hr>
+    <div class="timezone">
+      <h6>TIMEZONE</h6>
+      <p>placeholder</p>
+    </div>
+    <hr>
+    <div class="isp">
+      <h6>ISP</h6>
+      <p>placeholder</p>
+    </div>
+
+  </div>
+
+  <div id="map"></div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ashleypean">Ashley Pean</a>.
+  </footer>
+
+    <!--Leaflet.js file-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!--Index.js file-->
+    <script src="index.js"></script>
 </body>
 </html>
+
