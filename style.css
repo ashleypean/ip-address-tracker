@@ -2,12 +2,22 @@
 
 html, body {
   height: 100%;
-  width: 100%
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: url('/images/pattern-bg.png') no-repeat;
   font-family: 'Rubik', sans-serif;
+}
+
+div.search {
+  z-index: 1;
+  height: 30%;
+  background: url('/images/pattern-bg.png') no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -22,44 +32,53 @@ form {
 
 input[type="text"] {
   width: 33%;
-  height: 2.5rem;
+  height: 2.8rem;
   border-radius: 6px;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0 1rem;
   margin: 0;
-  padding: 0;
   font-size: 18px;
 }
 
 button {
   background-color: hsl(0, 0%, 17%);
-  height: 2.5rem;
+  height: 2.8rem;
   width: 3%;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   margin: 0;
+  margin-left: -.5rem;
   padding: 0;
 }
 
 div.info {
-  width: 80%;
+  position: relative;
+  z-index: 2;
+  width: 70%;
   height: 13%;
-  margin: auto;
-  padding: .5rem;
+  margin: -5rem 15%;
+  padding: 0 1rem;
   border-radius: 8px;
-  border: 1px solid darkslategray;
   background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  text-align: left;
+  justify-content: space-evenly;
 }
 
 div.info div {
-
+  height: 8rem;
 }
 
+hr {
+  margin: auto 0;
+  padding: 0;
+  height: 100px;
+}
 div.info h6 {
   color: hsl(0, 0%, 59%);
-
+  margin-bottom: 1rem;
 }
 
 div.info p {
@@ -70,12 +89,28 @@ div.info p {
 
 
 div#map {
-  height: 25rem;
+  z-index: 1;
+  height: 70%;
 }
 
 footer {
   position: absolute;
+  bottom: -20%;
+  background-size: 100% 100%;
+  background: rgb(212, 205, 205); 
+  opacity: 0.6;
+  z-index: 2;
   bottom: 0;
-  text-align: center;
-  width: 100%;
+  width: 20%;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 12px;
+}
+
+footer p a {
+  color: black;
 }
