@@ -11,7 +11,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoiYXBlYW4xIiwiYSI6ImNrZnpkam95ajAzb3kyeW1paHNpdjd3cWQifQ.N4KX-ONAnPYxfdhN_iyb2Q'
 }).addTo(myMap);
 
-//Create circle marker
+//Create a marker
 const icon = L.icon({
   iconUrl: '/images/icon-location.svg', 
   iconSize: [20, 25],
@@ -68,6 +68,10 @@ const updatePage = (info) => {
   //ISP
   document.querySelector('.isp p').innerHTML = info.isp
   console.log('Page has been updated!')
+
+  //Adjust view of map and icon 
+  myMap.setView([info.location.lat, info.location.lng])
+  marker.setLatLng([info.location.lat, info.location.lng])
 }
 
 //Fetch IP address after form submission 

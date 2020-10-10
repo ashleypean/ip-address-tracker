@@ -72,6 +72,7 @@ div.info {
 
 div.info div {
   height: 8rem;
+  width: 20%;
 }
 
 hr {
@@ -85,7 +86,7 @@ div.info h6 {
 }
 
 div.info p {
-  font-size: 2rem;
+  font-weight: 500;
   margin: 0; 
   padding: 0;
 }
