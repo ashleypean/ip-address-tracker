@@ -208,7 +208,7 @@ button.back {
   }
 
   button.back {
-    display: block;
+    display: none;
     z-index: 2;
     width: 25%;
     max-width: 100px;
