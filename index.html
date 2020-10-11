@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/ip-logo.png">
   
-  <title>Frontend Mentor | IP Address Tracker</title>
+  <title>IP Address Tracker</title>
   <!--Leaflet.css file-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -20,33 +20,34 @@
 
     <form action="#">
       <input type="text" name="search" id="search" placeholder="Search for any IP address or domain">
-      <button type="submit" >
+      <button type="submit" class="search">
         <img src="images/icon-arrow.svg" alt="Submit" />
       </button>
     </form>
+
+    <button type="submit" class="back" disabled>Back to Original Location</button>
   </div>
 
   <div class="info">
     <div class="ip">
       <h6>IP ADDRESS</h6>
-      <p></p>
+      <p>...</p>
     </div>
     <hr>
     <div class="location">
       <h6>LOCATION</h6>
-      <p></p>
+      <p>...</p>
     </div>
     <hr>
     <div class="timezone">
       <h6>TIMEZONE</h6>
-      <p></p>
+      <p>...</p>
     </div>
     <hr>
     <div class="isp">
       <h6>ISP</h6>
-      <p></p>
+      <p>...</p>
     </div>
-
   </div>
 
   <div id="map"></div>
