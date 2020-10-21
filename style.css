@@ -60,6 +60,7 @@ div.error {
 
 div.info {
   position: relative;
+  top: 40%;
   z-index: 2;
   border-radius: 8px;
   background-color: white;
@@ -159,6 +160,7 @@ button.back {
   }
 
   div.info {
+    font-size: .8rem;
     flex-direction: column;
     position: absolute;
     top: 25%;
@@ -216,6 +218,7 @@ button.back {
   }
 }
 
+/* TABLETS AND LARGE SCREENS*/
 @media screen and (min-width: 600px) {
   div.search {
     height: 30%;
@@ -245,9 +248,10 @@ button.back {
   div.info {
     flex-direction: row;
     position: absolute;
-    top: 21%;
-    margin: 0 10%;
-    width: 80%;
+    top: 25%;
+    margin: 0 20%;
+    width: 60%;
+    max-width: 1500px;
     height: auto;
     padding: 0;
   }
